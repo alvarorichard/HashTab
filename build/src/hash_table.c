@@ -6,6 +6,10 @@
 #include "hash_table.h"
 #include "prime.h"
 
+#define HT_PRIME_1 151
+#define HT_PRIME_2 163
+#define HT_INITIAL_BASE_SIZE 53
+
 // Define HT_PRIME_1, HT_PRIME_2, and HT_INITIAL_BASE_SIZE if they are not already defined.
 
 static ht_item* ht_new_item(const char* k, const char* v) {

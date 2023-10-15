@@ -19,4 +19,8 @@ void ht_insert(ht_hash_table* ht, const char* key, const char* value);
 char* ht_search(ht_hash_table* ht, const char* key);
 void ht_delete(ht_hash_table* ht, const char* key);
 
+// Include function prototypes for ht_resize_up and ht_resize_down
+static void ht_resize_up(ht_hash_table* ht);
+static void ht_resize_down(ht_hash_table* ht);
+
 #endif
