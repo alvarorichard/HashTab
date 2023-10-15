@@ -3,6 +3,8 @@
 #include <string.h>
 #include <math.h>
 #include "hash_table.h"
+#include "prime.h"
+
 
 int main() {
     ht_hash_table* ht = ht_new();
@@ -19,5 +21,7 @@ int main() {
     ht_delete(ht, "key1");
 
     ht_del_hash_table(ht);
+  
+
     return 0;
 }
